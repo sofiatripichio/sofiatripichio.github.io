@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Unna';
+    src: url('fonts/Unna-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rasputin';
+    src: url('fonts/Rasputin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Now';
+    src: url('fonts/Now-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    color: #a68d8d; /* Color de enlace normal */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:visited {
+    color:#9b8a8a; /* Color de enlace visitado */
+}
+
+a:hover {
+    color: #d6baba; /* Color al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+a:active {
+    color: #766c6c; /* Color cuando el enlace es clickeado */
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Unna-Regular;
+}
+
+#bar, .icon-menu3 {
+    display: none;
+}
+
+.contenedorglobal {
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header */
+header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border:solid #a68d8d;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+header .logo img {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+header nav ul li {
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style:hidden;
+    background-color: white;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #546960;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+    font-family: Unna-Regular;
+}
+header nav ul li :last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.navegador{
+    width: 49%;
+   
+}
+.logo {
+   width: 51%;
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: #a68d8d;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: solid #a68d8d;
+    display: flex; /* Agregado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.fixed-whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Permite flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Tamaño máximo de la imagen */
+    border-radius: 5px;
+}
+.nombre{
+    font-family: Now-Regular;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(81, 88, 88);
+}
+.masinfo{
+    font-family: Rasputin;
+    
+}
+.precio{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Espaciado superior */
+}
+.input {
+    font-size: 15px; /* Aumenta el tamaño de los números */
+    width: 40px;     /* Ajusta el ancho del input */
+    height: 35px;    /* Ajusta la altura del input */
+    padding: 5px;    /* Añade espacio interno para que el número no se vea apretado */
+    text-align: center; /* Centra el número dentro del input */
+    border-radius: 5px;
+    border: solid #a68d8d;
+    color: #a68d8d;
+}
+
+button {
+    background-color: white;
+    color: #a68d8d;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid #a68d8d;
+    height: 35px;
+    text-align: center;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #d2caca; /* Color más oscuro al pasar el ratón */
+}
+.info {
+    display: none;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#cartDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinea todo el contenido horizontalmente al centro */
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+}
+
+#cartDetails h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+#cartItems {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    text-align: center; /* Centra los elementos dentro del div */
+}
+
+#cartItemsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra el texto de la lista */
+}
+
+#cartDetails p {
+    text-align: center; /* Centra los párrafos de texto */
+    margin: 5px 0; /* Añade un pequeño margen para separación */
+}
+#buttonContainer {
+    display: flex;
+    justify-content: center; /* Alinea el botón al centro horizontalmente */
+    margin-top: 15px; /* Espacio superior */
+}
+
+#cartDetails button {
+    margin-top: 10px;
+    align-self: center; /* Alinea el botón horizontalmente al centro */
+}
+
+
+#cartIcon {
+    font-size: 24px; /* Aumenta el tamaño del ícono */
+    position: relative; /* Necesario para posicionar el contador */
+}
+
+#cartCount {
+    font-size: 14px; /* Ajusta el tamaño del contador */
+    background-color: black; /* Color de fondo del contador */
+    color: white; /* Color del texto del contador */
+    border-radius: 50%; /* Hacer que el contador sea redondo */
+    padding: 2px 6px; /* Añadir relleno al contador */
+    position: absolute; /* Posicionar el contador sobre el ícono */
+    top: -10px; /* Ajusta la posición vertical */
+    right: -10px; /* Ajusta la posición horizontal */
+}
+
+

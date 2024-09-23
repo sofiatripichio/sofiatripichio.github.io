@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'NombreDeLaFuente';
+    src:
+         url('fonts/Unna-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Unna-Regular;
+}
+
+#bar, .icon-menu3 {
+    display: none;
+}
+
+.contenedorglobal {
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header */
+header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border:solid #a68d8d;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+header .logo img {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+header nav ul li {
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style:hidden;
+    background-color: white;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #546960;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+    font-family: Unna-Regular;
+}
+header nav ul li :last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.navegador{
+    width: 49%;
+   
+}
+.logo {
+   width: 51%;
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: #a68d8d;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: solid #a68d8d;
+    display: flex; /* Agregado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+ .flexcontainer {
+        width: 100%;
+        height: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+ }
+ .div1 {
+    width: 100%;
+    height: 80vh; /* Usa vh para asegurar que el div tenga altura */
+    max-height: 500px;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.video1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.div2 {
+    width: 100%;
+    height: 120vh; /* Usa vh para asegurar que el div tenga altura */
+    max-height: 600px;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.video2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.divprincipios {
+    width: 100%;
+    height: 80vh; /* Usa vh para asegurar que el div tenga altura */
+    max-height: 500px;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.videoprincipios {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.div4 {
+    width: 100%;
+    height: 80vh; /* Usa vh para asegurar que el div tenga altura */
+    max-height: 500px;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.video4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.div5 {
+    width: 100%;
+    height: 90vh; /* Usa vh para asegurar que el div tenga altura */
+    max-height: 550px;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los divs se ajusten a varias filas */
+}
+
+.video5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1; /* Colocar el video detrás de los divs */
+}
+
+.column {
+    margin: 0px; /* Margen de 10px entre cada columna */
+    display: flex;
+    flex-direction: column; /* Alinear el texto en columnas */
+    justify-content: center; /* Centrar contenido verticalmente */
+
+}
+
+.column p {
+    margin-left: 30px; /* Margen a la izquierda de los párrafos */
+    font-size: 1em;
+}
+
+.upper {
+    height: 70%; /* 70% de altura para la parte superior */
+    flex: 1 1 calc(33.33% - 20px); /* Ocupa un tercio del ancho, ajustando por margen */
+}
+
+.lower {
+    height: 30%; /* 30% de altura para la parte inferior */
+    flex: 1 1 calc(33.33% - 20px); /* Ocupa un tercio del ancho, ajustando por margen */
+}
+.nombre{
+    font-weight: bold;
+    color: #546960;
+}
+
+a {
+    color: #8a8480; /* Color por defecto */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+a:visited {
+    color: #8a8480; /* Color para enlaces visitados */
+}
+
+a:hover {
+    color: #b0a7a2; /* Color más claro al pasar el mouse */
+}
+
+a:active {
+    color: #8a8480; /* Color para enlaces activos */
+}
+
+.nombre a i {
+    font-size: 1em; /* Cambia este valor según sea necesario */
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+.nombre i, .lower p i {
+    font-size: 1em; /* Cambia este valor según sea necesario */
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+}
