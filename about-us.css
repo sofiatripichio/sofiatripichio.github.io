@@ -391,7 +391,7 @@ footer {
     z-index: 2; /* Para que el contenido esté encima del video */
     width: 100%;
     height: 100%;
-    color: black; /* O el color de texto que prefieras */
+    color: green !important; /* O el color de texto que prefieras */
     margin-top: 58vh;
 }
 
