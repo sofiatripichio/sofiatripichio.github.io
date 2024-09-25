@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="google-site-verification" content="eFXEyaS-aGZhmNg3dOfe2S38yqfIPRZKZqBUbh13pO4" />
-    <title>Cosmetic Science</title>
+    <title>Cosmetic Science-Shop</title>
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -32,91 +32,81 @@
             </div>
         </div>
     </header>
+    <div class="flexcontainer">
+     <div class="contenedor1">
+   
+       <div class="purchase-info">
+        <div class="como"><h2>cómo comprar</h2></div>
+        <p><strong>A TRAVÉS DE </strong>
+        <a href="https://cosmeticscience.mercadoshops.com.ar/" target="_blank">
+            <img src="homemulti/mercadoshops.png" alt="Comprar por Mercado Libre" class="ml-logo">
+        </a><br>
+        Haz clic en el botón para comprar y disfrutar del envío a cargo de Mercado Libre. <br> Así de fácil y rápido.</p>
+        <br>
+        <p><strong>PAGO CON TRANSFERENCIA BANCARIA:</strong><br>
+        Aprovechá un <strong>25% de descuento</strong> seleccionando esta opción. <br> Seguí estos pasos:</p>
     
-    <div id="cartDetails" style="display:none;">
-        <h3>Carrito de Compras</h3>
-        <ul id="cartItemsList">
-            <!-- Aquí se llenarán dinámicamente los productos añadidos -->
-        </ul>
-        <p>Total: $<span id="cartTotalDisplay">0</span></p>
-        <p>Total con Descuento: $<span id="discountedTotal">0</span></p>
-        <div id="buttonContainer">
-            <button onclick="sendCart()">Enviar Carrito</button>
-        </div>
-    </div>
-    
+        <ol>
+            <li>Cargá tu carrito de compras en esta página y recibirás un email con los datos para realizar la transferencia.</li>
+            <li>Tenés 48 horas para completar el pago.</li>
+            <li>Podés elegir entre retirar el producto en CABA o Olavarría, o solicitar una cotización de envío. Para hacerlo, envianos tu dirección y código postal haciendo clic <a href="https://wa.me/2284568079">aquí</a>.</li>
+        </ol>
+       </div>
+       <div class="imagen1">
+        <img src="homemulti/imagen2.JPG" alt="">
+       </div>
 
-    <div class="products-container">
-        <!-- Producto 1 -->
-        <div class="product">
-            <img src="homemulti/1.png" alt="Gratia Plena" class="product-image">
-            <h3 class="nombre">GRATIA PLENA</h3>
-            <a class="masinfo" href="#" onclick="showInfo('info1')">Más Información</a>
-            <p class="precio">$17000</p>
+       
+     </div>
     
-            <!-- Contenedor para el input y el botón en la misma línea -->
-            <div class="input-container">
-                <input id="quantity-product1" class="input" type="number" min="1" value="1">
-                <button onclick="addToCart(17000, 'product1')">Añadir al Carrito</button>
-            </div>
-            
-            <button onclick="buyProduct('Gratia Plena', 17000)" style="margin-top: 10px;">Comprar en Mercado Libre</button>
-            
-            <div id="info1" class="info">
-                <p>Ingredientes: ...</p>
-                <p>Beneficios: ...</p>
-                <p>Tipo de piel: ...</p>
-                <p>Modo de uso: ...</p>
-            </div>
+     <div id="cartDetails" style="display:none;">
+        <h3>carrito de compras</h3>
+        <ul id="cartItemsList"></ul>
+        <p>Total: $<span id="cartTotalDisplay">0</span></p>
+        <p>Total con 25% OFF: $<span id="discountedTotal">0</span></p>
+        <div class="botoncheckout">
+        <button onclick="redirectToCheckout()">COMPRAR</button>
         </div>
-    
-        <!-- Producto 2 -->
-        <div class="product">
-            <img src="homemulti/3.png" alt="Hydroserum" class="product-image">
-            <h3 class="nombre">HYDROSERUM</h3>
-            <a class="masinfo" href="#" onclick="showInfo('info2')">Más Información</a>
-            <p class="precio">$17000</p>
-    
-            <!-- Contenedor para el input y el botón en la misma línea -->
-            <div class="input-container">
-                <input id="quantity-product2" class="input" type="number" min="1" value="1">
-                <button onclick="addToCart(17000, 'product2')">Añadir al Carrito</button>
-            </div>
-            
-            <button onclick="buyProduct('Hydroserum', 17000)" style="margin-top: 10px;">Comprar en Mercado Libre</button>
-            
-            <div id="info2" class="info">
-                <p>Ingredientes: ...</p>
-                <p>Beneficios: ...</p>
-                <p>Tipo de piel: ...</p>
-                <p>Modo de uso: ...</p>
-            </div>
-        </div>
-    
-        <!-- Producto 3 -->
-        <div class="product">
-            <img src="homemulti/2.png" alt="Bruma Be Fresh" class="product-image">
-            <h3 class="nombre">BRUMA BE FRESH</h3>
-            <a class="masinfo" href="#" onclick="showInfo('info3')">Más Información</a>
-            <p class="precio">$16600</p>
-    
-            <!-- Contenedor para el input y el botón en la misma línea -->
-            <div class="input-container">
-                <input id="quantity-product3" class="input" type="number" min="1" value="1">
-                <button onclick="addToCart(16600, 'product3')">Añadir al Carrito</button>
-            </div>
-            
-            <button onclick="buyProduct('Bruma Be Fresh', 16600)" style="margin-top: 10px;">Comprar en Mercado Libre</button>
-            
-            <div id="info3" class="info">
-                <p>Ingredientes: ...</p>
-                <p>Beneficios: ...</p>
-                <p>Tipo de piel: ...</p>
-                <p>Modo de uso: ...</p>
-            </div>
+     </div>
+
+ <div class="products-container">
+    <!-- Producto 1 -->
+    <div class="product">
+        <img src="homemulti/1.png" alt="Gratia Plena" class="product-image">
+        <h3 class="nombre">GRATIA PLENA</h3>
+        <a class="masinfo" href="gratia.html"target="_blank">Más Información</a>
+        <p class="precio">$17000</p>
+        <div class="input-container">
+            <input id="quantity-product1" class="input" type="number" min="1" value="1">
+            <button onclick="addToCart(17000, 'product1')">Añadir</button>
         </div>
     </div>
-    
+
+    <!-- Producto 2 -->
+    <div class="product">
+        <img src="homemulti/3.png" alt="Hydroserum" class="product-image">
+        <h3 class="nombre">HYDROSERUM</h3>
+        <a class="masinfo" href="hydro.html"target="_blank">Más Información</a>
+        <p class="precio">$17000</p>
+        <div class="input-container">
+            <input id="quantity-product2" class="input" type="number" min="1" value="1">
+            <button onclick="addToCart(17000, 'product2')">Añadir</button>
+        </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product">
+        <img src="homemulti/2.png" alt="Bruma Be Fresh" class="product-image">
+        <h3 class="nombre">BRUMA BE FRESH</h3>
+        <a class="masinfo" href="bruma.html"target="_blank">Más Información</a>
+        <p class="precio">$16600</p>
+        <div class="input-container">
+            <input id="quantity-product3" class="input" type="number" min="1" value="1">
+            <button onclick="addToCart(16600, 'product3')">Añadir</button>
+        </div>
+    </div>
+</div>
+  
     
     <!-- Botón de WhatsApp -->
     <div class="fixed-whatsapp">
@@ -125,7 +115,6 @@
         </a>
     </div>
 </div>
-
 <footer>
     <p>&copy; COSMETIC SCIENCE</p>
 </footer>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="eFXEyaS-aGZhmNg3dOfe2S38yqfIPRZKZqBUbh13pO4" />
+    <title>Cosmetic Science-Hydroserum</title>
+    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+<div class="contenedorglobal">
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar" class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="homemulti/logo.png" alt="Cosmetic Science Logo">
+            </div>
+            <div class="navegador">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="flexcontainer"> 
+        <div class="div1">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="homemulti/Hydroserum.MP4" type="video/mp4"> <!-- Cambia por la URL de tu video -->
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+            <div class="info-section">
+                <h1 class="product-name">HYDROSERUM</h1>
+                <div class="info-item">
+                    <h2>Información General</h2>
+                    <p>Sérum facial 30 ml. Hidratante, Refrescante, Antioxidante. Ideal para piel normal, piel tratamiento por acné y piel sensible.</p>
+                </div>
+                <div class="info-item">
+                    <h2 class="collapsible">Beneficios <i class="fas fa-chevron-down"></i></h2>
+                    <div class="content">
+                        <p>Hidratación profunda, mejora la elasticidad, calma la irritación, refresca la piel, combate el estrés oxidativo.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h2 class="collapsible">Modo de Uso <i class="fas fa-chevron-down"></i></h2>
+                    <div class="content">
+                        <p>Aplicar sobre la piel limpia y seca, masajear suavemente hasta su completa absorción. Se aplica luego de la bruma o tónico.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h2 class="collapsible">Ingredientes <i class="fas fa-chevron-down"></i></h2>
+                    <div class="content">
+                        <p><strong>Ácido Hialurónico:</strong> De origen vegetal, retiene mil veces su
+                            peso en moléculas de agua. Es un componente natural de
+                            la dermis. Excelente hidratante. <br>
+                            <strong>Aloe Vera:</strong> Regenerador de las células de la piel. Contiene
+                            Saponinas que resultan antisépticas y limpiadoras en la
+                            piel. Contiene Fitoesteroles que tienen propiedades
+                            antiinflamatorias. Antioxidante. Aporta Vitaminas y
+                            Minerales. Desconsgetiona, calma la irritación. <br>
+                            <strong>Q10:</strong> Neutraliza radicales libres, previene el
+                            fotoenvejecimiento y las lesiones de la piel por estrés
+                            oxidativo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p>&copy; COSMETIC SCIENCE</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.collapsible').forEach(item => {
+        item.addEventListener('click', event => {
+            const content = item.nextElementSibling; // Selecciona el siguiente elemento hermano (el contenido)
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Ocultar si está visible
+            } else {
+                content.style.display = "block"; // Mostrar si está oculto
+            }
+        });
+    });
+</script>
+</body>
+</html>

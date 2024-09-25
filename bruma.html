@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="eFXEyaS-aGZhmNg3dOfe2S38yqfIPRZKZqBUbh13pO4" />
+    <title>Cosmetic Science-Be Fresh</title>
+    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+<div class="contenedorglobal">
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar" class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="homemulti/logo.png" alt="Cosmetic Science Logo">
+            </div>
+            <div class="navegador">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="flexcontainer"> 
+        <div class="div1">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="homemulti/BeFresh.MP4" type="video/mp4"> <!-- Cambia por la URL de tu video -->
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+            <div class="info-section">
+                <h1 class="product-name">BE FRESH BRUMA</h1>
+                <div class="info-item">
+                    <h2>Información General</h2>
+                    <p>Bruma facial 100 ml. Desconhestiva, hidratante, resfrescante.</p>
+                </div>
+                <div class="info-item">
+                    <h2 class="collapsible">Beneficios <i class="fas fa-chevron-down"></i></h2>
+                    <div class="content">
+                        <p>La bruma facial hidrata profundamente, calma y descongestiona la piel, ayudando a reducir la inflamación y el enrojecimiento, además de aliviar la sensación de tirantez. Es ideal para proteger la piel de agresiones externas, como el sudor durante el ejercicio, así como la exposición al sol, frío, viento, calor y contaminantes ambientales. El agua de rosas equilibra el sebo y cuenta con propiedades antibacterianas, mientras que el aloe vera regenera, limpia y aporta un efecto antiinflamatorio. Por su parte, el ácido hialurónico proporciona una hidratación intensa. Manteniendo la piel suave, fresca y protegida a lo largo del día. Puedes aplicarla siempre que tu piel lo necesite. Su uso por la mañana, después de la limpieza, cierra los poros y prepara la piel para recibir mejor los productos de cuidado, como serums y cremas.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h2 class="collapsible">Modo de Uso <i class="fas fa-chevron-down"></i></h2>
+                    <div class="content">
+                        <p>Aplica la bruma facial por la mañana, después de la limpieza, para cerrar los poros y preparar la piel para recibir mejor los productos de cuidado, como serums y cremas. También puedes usarla en cualquier momento del día, especialmente cuando tu piel se exponga a agresiones externas, como el sudor durante el ejercicio, la exposición al sol, frío, viento, calor y contaminantes ambientales. Simplemente rocía a una distancia de 20-30 cm del rostro y deja que se absorba. Si te resulta más cómodo, también puedes aplicarla rociándola en un algodón o similar y pasándolo suavemente sobre la piel.</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h2 class="collapsible">Ingredientes <i class="fas fa-chevron-down"></i></h2>
+                    <div class="content">
+                        <p>
+                            <strong>Manzanilla:</strong> Limpia y suaviza la piel, antiinflamatorio y
+                            descongestivo. <br>
+                            <strong>Agua de rosas:</strong> equilibra el estrato hidrolipídico de la piel,
+                            controla el sebo de este estrato, antibacteriano, contiene
+                            vitaminas y propiedades descongestivas <br><strong>Ácido Hialurónico:</strong> De origen vegetal, retiene mil veces su
+                            peso en moléculas de agua. Es un componente natural de
+                            la dermis. Excelente hidratante. <br>
+                            <strong>Aloe Vera:</strong> Regenerador de las células de la piel. Contiene
+                            Saponinas que resultan antisépticas y limpiadoras en la
+                            piel. Contiene Fitoesteroles que tienen propiedades
+                            antiinflamatorias. Antioxidante. Aporta Vitaminas y
+                            Minerales. Desconsgetiona, calma la irritación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p>&copy; COSMETIC SCIENCE</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.collapsible').forEach(item => {
+        item.addEventListener('click', event => {
+            const content = item.nextElementSibling; // Selecciona el siguiente elemento hermano (el contenido)
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Ocultar si está visible
+            } else {
+                content.style.display = "block"; // Mostrar si está oculto
+            }
+        });
+    });
+</script>
+</body>
+</html>

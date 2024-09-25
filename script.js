@@ -19,3 +19,11 @@ let observer = new IntersectionObserver(function(entries) {
 videos.forEach(video => {
     observer.observe(video);
 });
+
+document.getElementById('icon-menu').addEventListener('click', function() {
+    const checkbox = document.getElementById('bar');
+    checkbox.checked = !checkbox.checked; // Cambia el estado del checkbox
+});
+
+
+

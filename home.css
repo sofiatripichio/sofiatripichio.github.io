@@ -31,7 +31,10 @@ header {
     overflow: hidden; /* Oculta cualquier contenido desbordado */
     background-color: #fff;
 }
-
+.container{
+    height: auto;
+    margin-bottom: 0px;
+}
 /* Estilos del banner */
 .banner {
     display: flex;
@@ -96,247 +99,25 @@ footer {
     width: 100%;
     height: 100%;
     max-width: 2000px;
-    margin: 0 auto;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
 
-.div1 {
-    width: 100%;
-    height: 75vh; /* Usa vh para asegurar que el div tenga altura */
-    position: relative;
-    overflow: hidden; /* Oculta cualquier desbordamiento */
 }
-
-.video1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+.div1cel{
+    display: none;
 }
-
-.div2 {
-    width: 100%;
-    height: 65vh;
-    position: relative;
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-   
+.video1cel{
+    display: none;
 }
-.video2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+.div2cel{
+    display: none;
 }
-.div3 {
-    width: 100%;
-    height: 75vh; /* Usa vh para asegurar que el div tenga altura */
-    position: relative;
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-}
-
-.video3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
-
-.div4 {
-    width: 100%;
-    height: 75vh; /* Usa vh para asegurar que el div tenga altura */
-    position: relative;
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-}
-.video4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
-
-.slide {
-    width: 100%;
-    height: 3.2vh; /* Altura adecuada para el slide */
-    position: relative;
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-    border: solid #546960;
-    text-align: center;
-    padding: 0.5vh;
-}
-
-
-.slide-text {
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    position: absolute; /* Permite el movimiento */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
-    opacity: 0; /* Comienza oculto */
-    font-size: 3vh; /* Aumenta el tamaño de la letra */
-    text-align: center; /* Centra el texto */
-    animation: slide 16s linear infinite; /* Cambia la duración a 16s para 4 textos */
-    color: #546960;;
-}
-
-.slide-text:nth-child(1) {
-    animation-delay: 0s; /* Sin retraso para el primer texto */
-}
-
-.slide-text:nth-child(2) {
-    animation-delay: 4s; /* Retraso para el segundo texto (4s visible) */
-}
-
-.slide-text:nth-child(3) {
-    animation-delay: 8s; /* Retraso para el tercer texto (4s visible) */
-}
-
-.slide-text:nth-child(4) {
-    animation-delay: 12s; /* Retraso para el cuarto texto (4s visible) */
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
-        opacity: 0; /* Oculto al inicio */
-    }
-    10% {
-        transform: translateX(0); /* Muestra el texto */
-        opacity: 1; /* Totalmente visible */
-    }
-    25% {
-        transform: translateX(0); /* Se mantiene en el centro */
-        opacity: 1; /* Totalmente visible */
-    }
-    35% {
-        transform: translateX(-100%); /* Se mueve fuera de la pantalla a la izquierda */
-        opacity: 0; /* Oculto al final */
-    }
-    100% {
-        transform: translateX(-100%); /* Asegura que termine fuera de la pantalla */
-        opacity: 0; /* Oculto al final */
-    }
-}
-=======
-@font-face {
-    font-family: 'NombreDeLaFuente';
-    src: url('fonts/Unna-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Estilos generales */
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-#bar, .icon-menu3 {
+.video2cel{
     display: none;
 }
 
-.contenedorglobal {
-    width: 100%;
-    height: 100%;
-    max-width: 2000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Estilos del header */
-header {
-    width: 100%;
-    overflow: hidden; /* Oculta cualquier contenido desbordado */
-    background-color: #fff;
-}
-
-/* Estilos del banner */
-.banner {
-    display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center;     /* Centra la imagen verticalmente si fuera necesario */
-}
-
-.banner img {
-    max-width: 100%;        /* Limita el ancho al 100% del contenedor */
-    height: auto;           /* Mantiene las proporciones originales de la imagen */
-    display: block;         /* Evita espacios en línea alrededor de la imagen */
-}
-
-/* Estilos de la barra de navegación */
-.nav-bar {
-    width: 100%;
-    height: 30px;
-    background-color: white;
-    border: solid #546960;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-bar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    color: #546960;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    font-size: 1.2em;
-    font-family: 'NombreDeLaFuente';
-}
-
-.nav-bar ul li a:hover {
-    color: #789387;
-}
-
-/* Footer */
-footer {
-    background-color: white;
-    color: #546960;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    border: #546960 solid;
-    display: flex; /* Agregado */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-}
-
-.flexcontainer {
-    width: 100%;
-    height: 100%;
-    max-width: 2000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 .div1 {
     width: 100%;
     height: 75vh; /* Usa vh para asegurar que el div tenga altura */
@@ -467,3 +248,131 @@ footer {
         opacity: 0; /* Oculto al final */
     }
 }
+@media (max-width: 768px) {
+    .icon-menu3{
+        display: block;
+        color: #546960;
+        height: 200px;
+        font-size: 30px;
+        left: 20px;
+        margin-top: 18px;
+        position: absolute;
+        z-index: 100000;
+        
+    }
+    .banner{
+        display: none;
+    }
+    
+    
+    #bar:checked ~ .container{
+        transform: translateX(0%);
+        transition: all 0.8s ease-out;
+        transition: all 0.8s ease-in;
+        background-color: white;
+        height: 200px;
+        width: 100px;
+        position: fixed;
+        margin-top: 70px;
+        
+    }
+    #bar {
+        display: none; /* Esto oculta el checkbox */
+    }
+    .nav-bar{
+        width: 100px;
+        height: 200px;
+        border: none;
+        z-index: 10000; /* Asegura que la barra de navegación esté delante */
+        
+       
+    
+    }
+    .container{
+        height:200px;
+        width:110px;
+        position: fixed;
+        margin-top: 40px;
+        transform: translateX(-100%);
+        z-index: 10000; /* Asegura que la barra de navegación esté delante */
+
+    }
+
+    .logo{
+    display: none;
+    }
+    .flexcontainer{
+      display: flex;
+       flex-direction: column; /* Stack items vertically */
+       width: 100%;
+       height: 82%;
+       padding: 10px;
+       z-index: 1; /* Asegura que la barra de navegación esté delante */
+
+    }
+       
+    .container .nav-bar ul {
+        list-style: none; /* Elimina los puntos de la lista */
+        padding: 0; /* Elimina el padding del contenedor de la lista */
+        margin: 0; /* Elimina el margin del contenedor de la lista */
+        display: flex; /* Usa flexbox para el contenedor de la lista */
+        flex-direction: column; /* Alinea los elementos de la lista en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    
+    }
+    .container .nav-bar ul li {
+        display: block;
+        border: 1px solid #546960;
+        border-radius: 10px;
+        padding: 5px; /* Reducción del padding */
+        width: 70%;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1px;
+        z-index: 10000; /* Asegura que la barra de navegación esté delante */
+        
+    }
+    
+    .container .nav-bar ul li a {
+        color: #546960;
+        font-size: 1em;
+        padding: 5px; /* Reducción del padding en los enlaces */
+        z-index: 10000; /* Asegura que la barra de navegación esté delante */
+
+    }
+    .div1,.div2,.div3,.div4,.slide{
+        display:none;
+       }
+    .div1cel, .div2cel, .div3cel{
+        display:flex;
+        width: 100%;
+        height: 950px; /* Usa vh para asegurar que el div tenga altura */
+        position: relative;
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+        z-index: 1; /* Asegura que la barra de navegación esté delante */
+        }
+    .div1cel{
+        margin-top: 50px;
+    }
+    .div2cel{
+        height: 700px;
+    }
+    .video2cel{
+        width: 80%!important;
+    }
+        
+    .video1cel, .video2cel, .video3cel{
+        display:flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: 0; /* Asegura que la barra de navegación esté delante */
+    }
+
+    }

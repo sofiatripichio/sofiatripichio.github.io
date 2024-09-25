@@ -60,6 +60,7 @@ header nav ul li {
     border-radius: 5px;
     border-style:hidden;
     background-color: white;
+    font-size: 1.1em!important;
 }
 
 .nav-bar ul li a {
@@ -68,7 +69,7 @@ header nav ul li {
     font-weight: bold;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
-    font-size: 1.2em;
+    font-size: 1.1em!important;
     font-family: Unna-Regular;
 }
 header nav ul li :last-child {
@@ -253,4 +254,215 @@ a:active {
 .nombre i, .lower p i {
     font-size: 1em; /* Cambia este valor según sea necesario */
     margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+.div1cel, .div2cel, .div3cel, .div4cel{
+    display:none
+}
+.video1cel, .video2cel, .video3cel, .video4cel{
+    display:none
+}
+@media (max-width: 768px){
+    /* Header */
+header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border:solid #a68d8d;
+}
+header .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+header .logo{
+   display: none;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 400px;
+   
+   
+}
+header nav ul li {
+    align-items: center!important;
+    padding: 10px!important;
+    margin-right: 5px!important;
+    border-radius: 5px!important;
+    background-color: white!important;
+    font-size: 20px!important;
+    width: auto!important;
+    
+}
+
+.nav-bar ul li a {
+    text-decoration: none!important;
+    color: #546960!important;
+    font-weight: bold!important;
+    padding: 10px 20px!important;
+    transition: background-color 0.3s ease!important;
+    font-size: 20px !important;
+    font-family: Unna-Regular!important;
+
+}
+header nav ul li :last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.navegador{
+    width: 49%;
+   
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: #a68d8d;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: solid #a68d8d;
+    display: flex; /* Agregado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+ .flexcontainer {
+        width: 100%;
+        height: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+ }
+ .div1,.div2,.div4,.divprincipios, .div5{
+    display: none;
+
+}
+.video1,.video2, .video4, .videoprincipios, .video5{
+    display: none;
+}
+
+
+.div1cel, .div2cel{
+    display:flex;
+    width: 100%;
+    height: 1000px; /* Usa vh para asegurar que el div tenga altura */
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+
+}
+.div3cel {
+    position: relative;
+    width: 100%;
+    height: 1000px; /* O puedes cambiar el valor según el tamaño que desees */
+    overflow: hidden;
+    display: flex;
+}
+
+.video3cel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.content-wrapper {
+    display: flex;
+    position: relative;
+    z-index: 2; /* Para que el contenido esté encima del video */
+    width: 100%;
+    height: 100%;
+    color: black; /* O el color de texto que prefieras */
+    margin-top: 430px;
+}
+
+.content-left, .content-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-left p, .content-right p {
+    padding: 20px; /* Ajusta el padding si es necesario */
+    text-align: center;
+    font-size: 1.5rem;
+}
+.div4cel {
+    position: relative;
+    width: 100%;
+    height: 1000px; /* Ocupa todo el alto de la pantalla */
+    overflow: hidden;
+    display: flex;
+}
+
+.video4cel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda el área */
+    z-index: 1; /* Coloca el video detrás del contenido */
+}
+
+.puntosde {
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    max-width: 400px;
+    height: 400px; /* Establece la altura de 400px */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    z-index: 2; /* Coloca el contenido sobre el video */
+    margin-top: 690px;
+}
+
+.izquierda, .centro {
+    width: 700px;
+    text-align:left;
+    height: 100%; /* Asegura que los divs internos ocupen el 100% de la altura de puntosde */
+
+}
+.izquierda{
+    margin-right: 40px;
+}
+
+
+.izquierda p, .centro p {
+    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
+    color: black; /* Si necesitas que el texto sea visible sobre el video */
+}
+
+
+.video1cel, .video2cel, .video3cel,.video4cel{
+    display:flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.instagram{
+    font-size: 20px!important;
+}
+.tel{
+    font-size: 20px!important ;
+}
 }
