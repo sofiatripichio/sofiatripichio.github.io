@@ -347,16 +347,16 @@ footer {
     .div1cel, .div2cel, .div3cel{
         display:flex;
         width: 100%;
-        height: 950px; /* Usa vh para asegurar que el div tenga altura */
+        height: 130vh; /* Usa vh para asegurar que el div tenga altura */
         position: relative;
         overflow: hidden; /* Oculta cualquier desbordamiento */
         z-index: 1; /* Asegura que la barra de navegación esté delante */
         }
     .div1cel{
-        margin-top: 50px;
+        margin-top: 5vh;
     }
     .div2cel{
-        height: 700px;
+        height: 115vh;
     }
     .video2cel{
         width: 80%!important;
