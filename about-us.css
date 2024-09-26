@@ -99,15 +99,6 @@ footer {
     align-items: center; /* Centra verticalmente */
 }
 
- .flexcontainer {
-        width: 100%;
-        height: 100%;
-        max-width: 2000px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
- }
  .div1 {
     width: 100%;
     height: 80vh; /* Usa vh para asegurar que el div tenga altura */
@@ -203,6 +194,33 @@ footer {
     z-index: -1; /* Colocar el video detrás de los divs */
 }
 
+.flexcontainer {
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper {
+    display: flex;
+    position: absolute;
+    z-index: 2; /* Para que el contenido esté encima del video */
+    width: 100%;
+    height: 100%;
+    margin-top: 73vh;
+   
+}
+.content-left, .content-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.content-left p, .content-right p {
+    padding: 20px; /* Ajusta el padding si es necesario */
+    text-align: center;
+    font-size: 1.5rem;
+}
 .column {
     margin: 0px; /* Margen de 10px entre cada columna */
     display: flex;
@@ -254,6 +272,39 @@ a:active {
 .nombre i, .lower p i {
     font-size: 1em; /* Cambia este valor según sea necesario */
     margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+.puntosde {
+    position: absolute;
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    max-width: 400px;
+    height: 400px; /* Establece la altura de 400px */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    z-index: 3; /* Coloca el contenido sobre el video */
+    margin-top: 91vh;
+    margin-left: 2vh;
+}
+
+.izquierda, .centro {
+    width: 700px;
+    text-align:left;
+    height: 100%; /* Asegura que los divs internos ocupen el 100% de la altura de puntosde */
+
+}
+.izquierda{
+    margin-right: 40px;
+}
+
+.izquierda p, .centro p {
+    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
+    
+}
+.instagram{
+    font-size: 20px!important;
+}
+.tel{
+    font-size: 20px!important ;
 }
 .div1cel, .div2cel, .div3cel, .div4cel{
     display:none
@@ -324,7 +375,7 @@ header nav ul li :last-child {
 /* Footer */
 footer {
     background-color: white;
-    color: green;
+    color:#a68d8d;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -335,14 +386,7 @@ footer {
     align-items: center; /* Centra verticalmente */
 }
 
- .flexcontainer {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
- }
+
  .div1,.div2,.div4,.divprincipios, .div5{
     display: none;
 
@@ -350,119 +394,32 @@ footer {
 .video1,.video2, .video4, .videoprincipios, .video5{
     display: none;
 }
-
-
-.div1cel, .div2cel{
+.div1cel, .div2cel, .div3cel, .div4cel{
     display:flex;
-    width: 100%;
-    height: 130vh; /* Usa vh para asegurar que el div tenga altura */
-    position: relative;
     overflow: hidden; /* Oculta cualquier desbordamiento */
-
 }
-.div3cel {
-    position: relative;
-    width: 100%;
-    height: 130vh; /* O puedes cambiar el valor según el tamaño que desees */
-    overflow: hidden;
-    display: flex;
-}
-.div4cel {
-    position: relative;
-    width: 100%;
-    height: 130vh; /* Ocupa todo el alto de la pantalla */
-    overflow: hidden;
-    display: flex;
-}
-
-.video3cel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.content-wrapper {
-    display: flex;
-    position: relative;
-    z-index: 2; /* Para que el contenido esté encima del video */
-    width: 100%;
-    height: 100%;
-    color: black; /* O el color de texto que prefieras */
-    margin-top: 58vh;
-}
-
-.content-left, .content-right {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-left p, .content-right p {
-    padding: 20px; /* Ajusta el padding si es necesario */
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-
-.video4cel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que el video cubra toda el área */
-    z-index: 1; /* Coloca el video detrás del contenido */
-}
-
-.puntosde {
-    position: relative;
-    display: flex;
-    justify-content:space-evenly;
-    width: 100%;
-    max-width: 400px;
-    height: 400px; /* Establece la altura de 400px */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    z-index: 2; /* Coloca el contenido sobre el video */
-    margin-top: 89vh;
-}
-
-.izquierda, .centro {
-    width: 700px;
-    text-align:left;
-    height: 100%; /* Asegura que los divs internos ocupen el 100% de la altura de puntosde */
-
-}
-.izquierda{
-    margin-right: 40px;
-}
-
-
-.izquierda p, .centro p {
-    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
-    color: black; /* Si necesitas que el texto sea visible sobre el video */
-}
-
-
-.video1cel, .video2cel, .video3cel,.video4cel{
-    display:flex;
-    position: absolute;
+.video1cel, .video2cel{
     top: 50%;
     left: 50%;
     width: 100%;
     height: auto;
     max-height: 100%;
-    transform: translate(-50%, -50%);
     object-fit: cover;
+    z-index: 1;
+    display: flex;
 }
-.instagram{
-    font-size: 20px!important;
+.video3cel,.video4cel{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transform: translate(-50%);
+    display: flex;
 }
-.tel{
-    font-size: 20px!important ;
-}
+
+
 }
