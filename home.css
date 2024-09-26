@@ -305,8 +305,6 @@ footer {
       display: flex;
        flex-direction: column; /* Stack items vertically */
        width: 100%;
-       height: 82%;
-       padding: 10px;
        z-index: 1; /* Asegura que la barra de navegación esté delante */
 
     }
@@ -344,35 +342,30 @@ footer {
     .div1,.div2,.div3,.div4,.slide{
         display:none;
        }
-    .div1cel, .div2cel, .div3cel{
+    .div1cel, .div2cel, .div3cel, .div4cel{
         display:flex;
-        width: 100%;
-        height: 130vh; /* Usa vh para asegurar que el div tenga altura */
-        position: relative;
         overflow: hidden; /* Oculta cualquier desbordamiento */
-        z-index: 1; /* Asegura que la barra de navegación esté delante */
-        }
+    }
     .div1cel{
         margin-top: 5vh;
     }
     .div2cel{
         height: 115vh;
+        justify-content: center;
     }
     .video2cel{
         width: 80%!important;
     }
         
     .video1cel, .video2cel, .video3cel{
-        display:flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: auto;
-        max-height: 100%;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-        z-index: 0; /* Asegura que la barra de navegación esté delante */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: flex;
     }
 
     }
