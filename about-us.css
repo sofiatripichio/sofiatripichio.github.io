@@ -313,6 +313,13 @@ a:active {
     display:none
 }
 @media (max-width: 768px){
+
+    .flexcontainer {
+        max-width: 4000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
     /* Header */
 header {
     background: white; /* Cambia al color primario que quieras usar */
