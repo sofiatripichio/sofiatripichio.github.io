@@ -312,7 +312,7 @@ a:active {
 .video1cel, .video2cel, .video3cel, .video4cel{
     display:none
 }
-@media (max-width: 768px){
+@media (max-width: 600px){
 
     .flexcontainer {
         max-width: 500px;
@@ -429,4 +429,34 @@ footer {
 }
 
 
+.izquierda p, .centro p {
+    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
+    font-size: 1.9vh;
+    
 }
+.nombre a i {
+    font-size: 1.9vh; /* Cambia este valor según sea necesario */
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+.nombre i, .lower p i {
+    font-size: 1.9vh; /* Cambia este valor según sea necesario */
+    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
+    
+    
+}
+    .instagram{
+        font-size: 1.9vh!important;
+    }
+    .tel{
+        font-size: 1.9vh!important ;
+    }
+    .column p {
+        margin-left: 30px; /* Margen a la izquierda de los párrafos */
+        font-size: 1.9vh;
+    }
+    .content-left p, .content-right p {
+        padding: 20px; /* Ajusta el padding si es necesario */
+        text-align: center;
+        font-size: 1.9vh;
+    }
+    }
