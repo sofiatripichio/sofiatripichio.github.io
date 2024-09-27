@@ -432,6 +432,8 @@ footer {
 .izquierda p, .centro p {
     margin: 5px 0; /* Ajusta el espacio entre los párrafos */
     font-size: 1.9vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
     
 }
 .nombre a i {
@@ -467,8 +469,7 @@ footer {
         height: 35%; /* Establece la altura de 400px */
         z-index: 3; /* Coloca el contenido sobre el video */
         align-self: flex-end;
-        margin-left: 2vh;
-        margin-top: 2.5vh;
+    
     }
     
     }
