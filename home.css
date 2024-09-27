@@ -248,7 +248,9 @@ footer {
         opacity: 0; /* Oculto al final */
     }
 }
-@media (max-width: 768px) {
+
+
+@media (max-width: 1400px) {
     .icon-menu3{
         display: block;
         color: #546960;
@@ -330,6 +332,7 @@ footer {
         margin-bottom: 1px;
         z-index: 10000; /* Asegura que la barra de navegación esté delante */
         
+        
     }
     
     .container .nav-bar ul li a {
@@ -367,5 +370,13 @@ footer {
     z-index: 1;
     display: flex;
     }
+    footer{
+        font-size: 2em;
+    }
 
+    }
+    @media (max-width: 768px){
+    footer{
+        font-size: 1em;
+    }
     }

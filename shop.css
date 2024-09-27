@@ -154,7 +154,7 @@ a:active {
 .como{
     margin-bottom: 1.2em;
     font-size: 1.5em;
-    width: 350px;
+    width: 80%;
     text-align: center;
     background-color: #aba6a6;
     
@@ -590,5 +590,8 @@ footer {
 }
 .imagen1 img{
     display: none;
+}
+.como{
+    font-size: 1.2em;
 }
 }
