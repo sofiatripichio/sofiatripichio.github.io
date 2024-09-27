@@ -468,7 +468,7 @@ footer {
         z-index: 3; /* Coloca el contenido sobre el video */
         align-self: flex-end;
         margin-left: 2vh;
-        margin-top: 2vh;
+        margin-top: 2.5vh;
     }
     
     }
