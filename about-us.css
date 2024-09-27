@@ -281,8 +281,7 @@ a:active {
     height: 38%; /* Establece la altura de 400px */
     z-index: 3; /* Coloca el contenido sobre el video */
     align-self: flex-end;
-    margin-left: 2vh;
-    margin-bottom: 1vh;
+
 }
 
 .izquierda, .centro {
@@ -432,8 +431,7 @@ footer {
 .izquierda p, .centro p {
     margin: 5px 0; /* Ajusta el espacio entre los párrafos */
     font-size: 1.9vh;
-    margin-left: 2vh;
-    margin-top: 2vh;
+    margin-left: 1.5vh;
     
 }
 .nombre a i {
@@ -465,7 +463,7 @@ footer {
         position: absolute;
         display: flex;
         justify-content:space-evenly;
-        width: 95%;
+        width: 70%;
         height: 35%; /* Establece la altura de 400px */
         z-index: 3; /* Coloca el contenido sobre el video */
         align-self: flex-end;
