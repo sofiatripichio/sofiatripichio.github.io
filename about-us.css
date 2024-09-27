@@ -276,27 +276,23 @@ a:active {
 .puntosde {
     position: absolute;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     width: 95%;
-    height: 38%; /* Establece la altura de 400px */
+    height: 45%; /* Establece la altura de 400px */
     z-index: 3; /* Coloca el contenido sobre el video */
     align-self: flex-end;
+    margin-left: 1vh;
 
 }
 
 .izquierda, .centro {
-    width: 700px;
+    width: 50%;
     text-align:left;
     height: 100%; /* Asegura que los divs internos ocupen el 100% de la altura de puntosde */
-
-}
-.izquierda{
-    margin-right: 40px;
 }
 
 .izquierda p, .centro p {
-    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
-    font-size: 2vh;
+    font-size: 2.5vh;
     
 }
 .instagram{
@@ -428,12 +424,6 @@ footer {
 }
 
 
-.izquierda p, .centro p {
-    margin: 5px 0; /* Ajusta el espacio entre los párrafos */
-    font-size: 1.9vh;
-    margin-left: 1.5vh;
-    
-}
 .nombre a i {
     font-size: 1.9vh; /* Cambia este valor según sea necesario */
     margin-right: 5px; /* Espacio a la derecha del ícono */
@@ -454,20 +444,6 @@ footer {
         margin-left: 30px; /* Margen a la izquierda de los párrafos */
         font-size: 1.9vh;
     }
-    .content-left p, .content-right p {
-        padding: 20px; /* Ajusta el padding si es necesario */
-        text-align: center;
-        font-size: 1.9vh;
-    }
-    .puntosde {
-        position: absolute;
-        display: flex;
-        justify-content:space-evenly;
-        width: 70%;
-        height: 35%; /* Establece la altura de 400px */
-        z-index: 3; /* Coloca el contenido sobre el video */
-        align-self: flex-end;
-    
-    }
+
     
     }
