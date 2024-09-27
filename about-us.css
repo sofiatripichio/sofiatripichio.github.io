@@ -459,4 +459,16 @@ footer {
         text-align: center;
         font-size: 1.9vh;
     }
+    .puntosde {
+        position: absolute;
+        display: flex;
+        justify-content:space-evenly;
+        width: 95%;
+        height: 35%; /* Establece la altura de 400px */
+        z-index: 3; /* Coloca el contenido sobre el video */
+        align-self: flex-end;
+        margin-left: 2vh;
+        margin-top: 2vh;
+    }
+    
     }
