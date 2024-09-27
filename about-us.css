@@ -278,7 +278,7 @@ a:active {
     display: flex;
     justify-content:space-between;
     width: 95%;
-    height: 45%; /* Establece la altura de 400px */
+    height: 35%; /* Establece la altura de 400px */
     z-index: 3; /* Coloca el contenido sobre el video */
     align-self: flex-end;
     margin-left: 1vh;
