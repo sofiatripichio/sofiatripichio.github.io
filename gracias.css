@@ -1,0 +1,633 @@
+@font-face {
+    font-family: 'NombreDeLaFuente';
+    src:
+         url('fonts/Unna-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Now-Regular';
+    src: url('fonts/Now-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'Rasputin';
+    src: url('fonts/Rasputin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;}
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Unna-Regular;
+}
+
+#bar, .icon-menu3 {
+    display: none;
+}
+
+.contenedorglobal {
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header */
+header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border:solid #a68d8d;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+header .logo img {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+header nav ul li {
+    align-items: center!important;
+    padding: 10px!important;
+    margin-right: 10px!important;
+    border-radius: 5px!important;
+    border-style:hidden!important;
+    background-color: white!important;
+    font-size: 1.2em!important;
+}
+
+.nav-bar ul li a {
+    text-decoration: none!important;
+    color: #546960!important;
+    font-weight: bold!important;
+    padding: 10px 20px!important;
+    transition: background-color 0.3s ease!important;
+    font-size: 1.2 em!important;
+    font-family: Unna-Regular!important;
+}
+header nav ul li :last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.navegador{
+    width: 49%;
+   
+}
+.logo {
+   width: 51%;
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: #a68d8d;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: solid #a68d8d;
+    display: flex; /* Agregado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+ .flexcontainer {
+        width: 100%;
+        height: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+ }
+ a {
+    color: #8a8480; /* Color por defecto */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+a:hover {
+    color: #b0a7a2!important; /* Color más claro al pasar el mouse */
+}
+
+a:active {
+    color: #8a8480!important; /* Color para enlaces activos */
+}
+
+.video-container {
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+    
+}
+
+/* Video de fondo */
+.contenedor1{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f9fffb;
+    padding: 2em;
+    
+
+}
+.como{
+    margin-bottom: 1.2em;
+    font-size: 1.5em;
+    width: 80%;
+    text-align: center;
+    background-color: #aba6a6;
+    
+
+}
+.como h2{
+  font-family: 'Rasputin';
+  color:white;
+  padding: 4px;
+}
+
+.imagen1{
+    width: 600px;
+    height: 600px;
+   
+}
+.imagen1 img{
+        width: 100%; /* El video será responsive */
+        height: 100%; /* Mantener proporciones */
+        object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+        border-radius: 2em;  
+}
+.purchase-info {
+    font-family: Unna-Regular;
+    width: 45%; /* Ocupa el 70% del ancho de la página */
+    padding: 10px;
+    box-sizing: border-box;
+    color: #a68d8d;
+    float: left; 
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 1; /* Asegura que el contenido esté sobre el fondo */
+    position: relative; /* Asegura que se posicione correctamente sobre el fondo */
+
+   
+}
+
+.purchase-info p, .purchase-info ol .purchase-info li {
+    font-size: 1.4em;
+    line-height: 1.7;
+    font-family: Unna-Regular;
+}
+
+.purchase-info li{
+    line-height: 1.5;
+    font-family: Unna-Regular;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+.purchase-info a {
+    color: #6b6363;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.purchase-info a:hover {
+    text-decoration: underline;
+}
+
+.ml-logo {
+    vertical-align: middle;
+    width: 5em; /* Tamaño más pequeño del logo */
+    margin-left: 5px; /* Espacio entre el texto y el logo */
+}
+
+/* Asegura que los números de la lista tengan espacio suficiente */
+.purchase-info ol {
+    padding-left: 20px; /* Añade margen izquierdo a la lista */
+}
+
+.purchase-info ol li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.fixed-whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Permite flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Tamaño máximo de la imagen */
+    border-radius: 5px;
+}
+.nombre{
+    font-family: Unna-Regular;
+    margin-top: 1.5em;
+    margin-bottom: 0,8em;
+    color: #a68d8d;
+    font-size: 1.4em;
+}
+.masinfo{
+    font-family:Rasputin;
+    font-size: 1.2em;
+    color:#6b6363;
+    margin-top: 0.8em;
+    text-decoration: underline;
+    
+}
+.precio{
+    font-family:Rasputin;
+    margin-top: 1em;
+    color: #a68d8d;
+    font-size: 1.2em;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Espaciado superior */
+}
+.input {
+    font-size: 1.3em ; /* Aumenta el tamaño de los números */
+    width: 40px;     /* Ajusta el ancho del input */
+    height: 2.1em;    /* Ajusta la altura del input */
+    text-align: center; /* Centra el número dentro del input */
+    border-radius: 5px;
+    border: solid #a68d8d;
+    color: #a68d8d;
+    font-size: 1.3em;}
+
+button {
+    background-color: white;
+    color: #a68d8d;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Unna-Regular;
+    border: solid #a68d8d;
+    height: 2.1em;
+    text-align: center;
+    font-size: 1.3em ;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+button:hover {
+    background-color: #d2caca; /* Color más oscuro al pasar el ratón */
+}
+.info {
+    display: none;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#cartDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinea todo el contenido horizontalmente al centro */
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    
+}
+
+#cartDetails h3 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #a68d8d;
+    text-align: center;
+    font-family: Rasputin !important;
+}
+
+
+#cartItems {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    text-align: center; /* Centra los elementos dentro del div */
+    
+}
+
+#cartItemsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Centra el texto de la lista */
+    color:#918888 ;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+   
+}
+
+#cartDetails p {
+    text-align:left; /* Centra los párrafos de texto */
+    margin: 5px 0; /* Añade un pequeño margen para separación */
+    color: #7f7373;
+    font-size: 1.1em;
+    
+}
+.botoncheckout {
+    display: flex;
+    justify-content: center; /* Alinea el botón al centro horizontalmente */
+    margin-top: 15px; /* Espacio superior */
+    font-size: 1.1em;
+    height: 4em;
+    
+}
+
+#cartDetails button {
+    margin-top: 10px;
+    align-self: center; /* Alinea el botón horizontalmente al centro */
+    font-size: 0.9em;
+}
+
+
+#cartIcon {
+    font-size: 30px; /* Aumenta el tamaño del ícono */
+    position: relative; /* Necesario para posicionar el contador */
+    color: #6b6363;
+}
+
+#cartCount {
+    font-size: 14px; /* Ajusta el tamaño del contador */
+    background-color: black; /* Color de fondo del contador */
+    color: white; /* Color del texto del contador */
+    border-radius: 50%; /* Hacer que el contador sea redondo */
+    padding: 2px 6px; /* Añadir relleno al contador */
+    position: absolute; /* Posicionar el contador sobre el ícono */
+    top: -10px; /* Ajusta la posición vertical */
+    right: -10px; /* Ajusta la posición horizontal */
+}
+.div1cel{
+    display:none
+}
+.div1 {
+    width: 100%;
+    height: 75vh; /* Usa vh para asegurar que el div tenga altura */
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.video1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    /* Header */
+header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border:solid #a68d8d;
+}
+header .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+header .logo{
+   display: none;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 400px;
+   
+   
+}
+header nav ul li {
+    align-items: center!important;
+    padding: 10px!important;
+    margin-right: 5px!important;
+    border-radius: 5px!important;
+    background-color: white!important;
+    font-size: 20px!important;
+    width: auto!important;
+    
+}
+
+.nav-bar ul li a {
+    text-decoration: none!important;
+    color: #546960!important;
+    font-weight: bold!important;
+    padding: 10px 20px!important;
+    transition: background-color 0.3s ease!important;
+    font-size: 20px !important;
+    font-family: Unna-Regular!important;
+
+}
+header nav ul li :last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.navegador{
+    width: 100%;
+   
+}
+.logo {
+   display: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: #a68d8d;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: solid #a68d8d;
+    display: flex; /* Agregado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+ .flexcontainer {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    
+ }
+ #background-video {
+    display: none;
+}
+.purchase-info {
+    width: 100%; /* Ocupa el 70% del ancho de la página */
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #a68d8d;
+    float: left; 
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 1; /* Asegura que el contenido esté sobre el fondo */
+    position: relative; /* Asegura que se posicione correctamente sobre el fondo */
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.purchase-info p, .purchase-info ol {
+    font-size: 1.2em;
+    line-height: 1.3;
+    font-family: Unna-Regular;
+}
+
+.purchase-info a {
+    color: #6b6363;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.purchase-info a:hover {
+    text-decoration: underline;
+}
+
+.ml-logo {
+    vertical-align: middle;
+    width: 6em; /* Tamaño más pequeño del logo */
+    margin-left: 5px; /* Espacio entre el texto y el logo */
+}
+
+/* Asegura que los números de la lista tengan espacio suficiente */
+.purchase-info ol {
+    padding-left: 20px; /* Añade margen izquierdo a la lista */
+}
+
+.purchase-info li{
+    line-height: 1.1em;
+    font-family: Unna-Regular;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#cartDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinea todo el contenido horizontalmente al centro */
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 250px!important;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+}
+#cartDetails h3 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #a68d8d;
+    text-align: center;
+    font-family: Rasputin !important;
+}
+
+.imagen1{
+    display: none;
+}
+.imagen1 img{
+    display: none;
+}
+.como{
+    font-size: 1.2em;}
+
+.div1,.div2,.div3,.div4,.slide{
+        display:none;
+       }
+.div1cel, .div2cel, .div3cel, .div4cel{
+        display:flex;
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+    }
+    .video1cel, .video2cel, .video3cel{
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        display: flex;
+        }
+
+}
