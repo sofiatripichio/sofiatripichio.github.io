@@ -29,11 +29,13 @@ function addToCart(price, productId) {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
     // Calcula y muestra el total con descuento
-    const discountRate = 0.25; // 25% de descuento
+    const discountRate = 0.10; // 10% de descuento
     const discountedTotal = cartTotal * (1 - discountRate);
     document.getElementById('discountedTotal').innerText = discountedTotal.toFixed(2);
 
-    alert(`Añadido al carrito. Total de ${productId}: $${itemTotal.toFixed(2)}`);
+    const productName = getProductName(productId);
+
+alert(`Añadido al carrito: ${productName}. Total: $${itemTotal.toFixed(2)}`);
 }
 
 function updateCartDisplay() {
