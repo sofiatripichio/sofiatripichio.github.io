@@ -42,10 +42,23 @@
     <div class="flexcontainer">
     
         <div id="cartSummary">
-            <h3>Resumen de Compra</h3>
-            <ul id="cartItemsList"></ul>
-            <p class="total">Total: $<span id="cartTotalDisplay">0</span></p>
-        </div>
+    <h3>Resumen de Compra</h3>
+
+    <ul id="cartItemsList"></ul>
+
+    <p class="total">
+        Subtotal: $<span id="cartTotalDisplay">0</span>
+    </p>
+
+    <p class="total">
+        Descuento por transferencia: 10%
+    </p>
+
+    <p class="total">
+        Total con descuento:
+        $<span id="discountedTotal">0</span>
+    </p>
+</div>
     
         <form id="checkoutForm">
             <label for="name">Nombre:</label>
